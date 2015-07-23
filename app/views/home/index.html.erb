@@ -14,6 +14,7 @@
   <% @posts.each do |post| %>
   <li>
     <%= post.title %>: <%= post.body %>
+    (<%= count_words(post) %> words)
   </li>
   <% end %>
 </ul>
